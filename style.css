@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #3586ff;
+    overflow: hidden;
+}
+section .wave{
+position: absolute;
+bottom: 0;
+left: 0;
+width: 100%;
+height: 100px;
+background: url(wave.png);
+background-size: 1000px 100px;
+}
+section .wave.wave1{
+    animation: animate 5s linear infinite;
+}
+@keyframes animate{
+    0%{
+        background-position-x: 0;
+    }
+    100%{
+        background-position-x: 1000px;
+    }
+}
+.d{
+    height:2000px;
+}
